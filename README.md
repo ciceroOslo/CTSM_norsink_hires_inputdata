@@ -17,7 +17,8 @@ configuration files and a small amount of custom code to create mesh and input
 data files for the grid.
 
 Step by step instructions that explain the changes that were made and how to use
-the custom grid are given in the file [README_NorSink_hires_inputdata.md].
+the custom grid are given in the file
+[README_NorSink_hires_inputdata.md](/README_NorSink_hires_inputdata.md).
 
 
 ## Overview and resources
