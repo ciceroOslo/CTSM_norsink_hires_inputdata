@@ -8,7 +8,8 @@
 <https://github.com/NorESMhub/CTSM>. It was forked to contain custom changes
 needed to create and use high-resolution grids for the NorSink project,
 initially a 0.1x0.1 degree grid over Fennoscandia containing the Norwegian
-mainland, referred to as "NorwayRect_0.1x0.1" or by similar names.
+mainland, referred to as "NorwayRect\_0.1x0.1" or by similar names in the XML
+files in this repo and its submodules.
 
 The main customizations are additions to XML files that enable using the grid
 and associated data files in NorESM cases created with the `create_newcase`
@@ -18,7 +19,24 @@ data files for the grid.
 
 Step by step instructions that explain the changes that were made and how to use
 the custom grid are given in the file
-[README_NorSink_hires_inputdata.md](/README_NorSink_hires_inputdata.md).
+[README\_NorSink\_hires\_inputdata.md](/README_NorSink_hires_inputdata.md).
+
+This repo uses custom forks of two submodules that contain XML files with
+settings:
+
+- `CDEPS`, with custom settings for using the high-resolution grid and data
+  files for meteorological forcing in the data atmosphere model (DATM):
+  <https://github.com/ciceroOslo/CDEPS_noresm_norsink_hires_inputdata>
+- `ccs_config`, with custom settings for using the high-resolution grid in CIME
+  case control scripts:
+  <https://github.com/ciceroOslo/ccs_config_noresm_norsink_hires_inputdata>
+
+Whenever changes are made in these repos (including changes merged in from the
+upstream `noresm` branch), the file [.gitmodules](/.gitmodules) in this repo
+must be updated with the new tags for those two submodule repos.
+
+The remaining text below is the original README.md from the upstream
+[NorESMhub/CTSM](https://github.com/NorESMhub/CTSM) repository.
 
 
 ## Overview and resources
