@@ -35,6 +35,9 @@ Whenever changes are made in these repos (including changes merged in from the
 upstream `noresm` branch), the file [.gitmodules](/.gitmodules) in this repo
 must be updated with the new tags for those two submodule repos.
 
+The remaining text below is the original README.md from the upstream
+[NorESMhub/CTSM](https://github.com/NorESMhub/CTSM) repository.
+
 
 ## Overview and resources
 
