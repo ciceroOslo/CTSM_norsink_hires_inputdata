@@ -2,6 +2,25 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3739617.svg)](https://doi.org/10.5281/zenodo.3739617)
 
+## Notice about fork for NorSink high-resolution grid and input data
+
+**NB!** This repository is a fork of the CTSM component of NorESM, forked from
+<https://github.com/NorESMhub/CTSM>. It was forked to contain custom changes
+needed to create and use high-resolution grids for the NorSink project,
+initially a 0.1x0.1 degree grid over Fennoscandia containing the Norwegian
+mainland, referred to as "NorwayRect_0.1x0.1" or by similar names.
+
+The main customizations are additions to XML files that enable using the grid
+and associated data files in NorESM cases created with the `create_newcase`
+command and subsequent commands in the CIME model run pipeline, and
+configuration files and a small amount of custom code to create mesh and input
+data files for the grid.
+
+Step by step instructions that explain the changes that were made and how to use
+the custom grid are given in the file
+[README_NorSink_hires_inputdata.md](/README_NorSink_hires_inputdata.md).
+
+
 ## Overview and resources
 
 The Community Terrestrial Systems Model.

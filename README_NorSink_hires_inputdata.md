@@ -4,6 +4,11 @@ The following are notes and instructions for how to produce a high-resolution
 (0.1x0.1 degrees) grid for Norway and surrounding regions for use in NorSink,
 and input data for CLM/CTSM and accompanying models used in the project.
 
+For short instructions on how to create and run NorESM cases iwith the
+high-resolution grid and input data, see the file
+[HOWTO\_NorSink\_hires\_cases.md](./HOWTO_NorSink_hires_cases.md).
+
+
 ## Contents
 - [Steps to produce high-resolution grid and input data for NorSink](#steps-to-produce-high-resolution-grid-and-input-data-for-norsink)
   - [Contents](#contents)
