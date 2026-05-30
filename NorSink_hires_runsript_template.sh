@@ -1,6 +1,8 @@
 #!/bin/bash
 
 #Template script to clone, build and run NorESM CTSM on Betzy with the high-resolution NorwayRect_0.1x0l.1 grid for Norway and parts of Fennoscandia.
+#
+#This file was originally copied and modified from the following: <https://github.com/kjetilaas/Run_NorESM_script/blob/d2f48d99d68be7e3e87a5643841419d5da108ab2/Feb26/Fates_test_Nordic_region.sh>
 
 dosetup1=1 #do first part of setup
 dosetup2=1 #do second part of setup (after first manual modifications)
@@ -13,6 +15,9 @@ echo "setup1, setup2, setup3, submit, forcenewcase:", $dosetup1, $dosetup2, $dos
 USER="janko"  # Change this to your own user name
 project='nn9188k' #nn8057k: EMERALD, nn2806k: METOS, nn9188k: CICERO, nn9560k: NorESM (INES2), nn9039k: NorESM (UiB: Climate predition unit?), nn2345k: NorESM (EU projects)
 machine='betzy'  # Using with any other machine will require creating the same file structures on the new machine.
+
+#Remote repo
+remoterepourl="https://github.com/ciceroOslo/CTSM_norsink_hires_inputdata.git"
 
 #NorESM dir
 noresmversion="norsink_inputdata_main"   # Name of the branch or tag to use from the remote repo
@@ -38,20 +43,20 @@ startdr="$(pwd)"
 #Download code and checkout externals
 if [ $dosetup1 -eq 1 ]
 then
-    cd $workpath
+    cd "$workpath"
 
     pwd
     #go to repo, or checkout code
     if [[ -d "$noresmclonedir" ]]
     then
-        cd $noresmclonedir
+        cd "$noresmclonedir"
         echo "Already have NorESM repo"
     else
         echo "Cloning NorESM"
 
 
         echo "Using CTSM version $noresmversion"
-        git clone https://github.com/korsbakken/CTSM.git  $noresmclonedir
+        git clone "$remoterepourl" "$noresmclonedir"
         cd "$noresmclonedir"
         git checkout "$noresmversion"
         ./bin/git-fleximod update
