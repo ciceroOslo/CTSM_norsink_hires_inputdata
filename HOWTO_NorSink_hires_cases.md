@@ -39,6 +39,13 @@ and for each run:
    on `noresmversion`).
 1. `workpath`: Change this if you need to put the cloned repos and case
    directories in a different location than the default.
+1. `create_newcase` command, under the `#Make case` header: Set any custom
+   command line options you need for `create_newcase`. You may in particular
+   want to review the `--pecount` option if you are running a small job or test
+   run. Changes to the `create_newcase` command-line ptions should primarily be
+   in job- and compiler-related options that you can't or don't want to set
+   through XML settings with `xmlchange`. Case- and compset-related options
+   should be set through the other variables above.
 1. Lines under `#XML changes` and `#Add following lines to user_nl_clm`: Change
    or add lines here to set the XML settings and namelist items that you need
    for your case.
