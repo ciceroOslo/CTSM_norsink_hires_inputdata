@@ -11,9 +11,12 @@ initially a 0.1x0.1 degree grid over Fennoscandia containing the Norwegian
 mainland, referred to as "NorwayRect\_0.1x0.1" or by similar names in the XML
 files in this repo and its submodules.
 
-Step by step instructions that explain the changes that were made and how to use
-the custom grid are given in the file
-[README\_NorSink\_hires\_inputdata.md](/README_NorSink_hires_inputdata.md).
+Detailed step by step instructions that explain the changes that were made and
+how to use the custom grid are given in the file
+[README\_NorSink\_hires\_inputdata.md](/README_NorSink_hires_inputdata.md). A
+shorter howto on how to create and run cases with the high-res grid is in
+[HOWTO\_NorSink\_hires\_cases.md](./HOWTO_NorSink_hires_cases.md), which
+contains a link to an example run script.
 
 The latest version of the changes live in the branch
 [norsink\_inputdata\_main](https://github.com/ciceroOslo/CTSM_norsink_hires_inputdata/tree/norsink_inputdata_main)
