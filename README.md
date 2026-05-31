@@ -11,6 +11,13 @@ initially a 0.1x0.1 degree grid over Fennoscandia containing the Norwegian
 mainland, referred to as "NorwayRect\_0.1x0.1" or by similar names in the XML
 files in this repo and its submodules.
 
+The latest version of the changes live in the branch
+[norsink\_inputdata\_main](https://github.com/ciceroOslo/CTSM_norsink_hires_inputdata/tree/norsink_inputdata_main)
+which is the default branch of this repository. Updates to the default branch
+([noresm](https://github.com/NorESMhub/CTSM/tree/noresm)) of the parent
+repository must be periodically merged in to keep this fork up to date, and
+likewise for the CDEPS and ccs\_config submodules (see below).
+
 The main customizations are additions to XML files that enable using the grid
 and associated data files in NorESM cases created with the `create_newcase`
 command and subsequent commands in the CIME model run pipeline, and
