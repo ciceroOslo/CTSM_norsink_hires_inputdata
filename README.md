@@ -11,6 +11,10 @@ initially a 0.1x0.1 degree grid over Fennoscandia containing the Norwegian
 mainland, referred to as "NorwayRect\_0.1x0.1" or by similar names in the XML
 files in this repo and its submodules.
 
+Step by step instructions that explain the changes that were made and how to use
+the custom grid are given in the file
+[README\_NorSink\_hires\_inputdata.md](/README_NorSink_hires_inputdata.md).
+
 The latest version of the changes live in the branch
 [norsink\_inputdata\_main](https://github.com/ciceroOslo/CTSM_norsink_hires_inputdata/tree/norsink_inputdata_main)
 which is the default branch of this repository. Updates to the default branch
@@ -18,15 +22,11 @@ which is the default branch of this repository. Updates to the default branch
 repository must be periodically merged in to keep this fork up to date, and
 likewise for the CDEPS and ccs\_config submodules (see below).
 
-The main customizations are additions to XML files that enable using the grid
-and associated data files in NorESM cases created with the `create_newcase`
-command and subsequent commands in the CIME model run pipeline, and
-configuration files and a small amount of custom code to create mesh and input
-data files for the grid.
-
-Step by step instructions that explain the changes that were made and how to use
-the custom grid are given in the file
-[README\_NorSink\_hires\_inputdata.md](/README_NorSink_hires_inputdata.md).
+The main customizations in this repo are additions to XML files that enable
+using the grid and associated data files in NorESM cases created with the
+`create_newcase` command and subsequent commands in the CIME model run pipeline,
+and configuration files and a small amount of custom code to create mesh and
+input data files for the grid.
 
 This repo uses custom forks of two submodules that contain XML files with
 settings:
